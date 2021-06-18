@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'/>
+</head>
+<body>
+    <div class="content container">
+        <h1 class="title">TODO LIST</h1>
+
+        <div class="addArea">
+            <input class="addtxt" type="text" placeholder="新增待辦項目">
+            <button class="block addBtn"><i class="fas fa-plus-square"></i></button>
+        </div>
+
+        <div class="record-board">
+            <div class="board-top">
+                <button class="button allBtn selected" data-btnName="allBtn">全部</button>
+                <button class="button undoBtn" data-btnName="undoBtn">待完成</button>
+                <button class="button doneBtn" data-btnName="doneBtn">已完成</button>
+            </div>
+
+            <ul class="itemList">
+                
+            </ul>
+            <div class="board-buttom">
+                <p class="undo-qty"></p>
+                <button class="clearDoneBtn">清除已完成項目</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./all.js"></script>
+</body>
+</html>

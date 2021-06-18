@@ -1,0 +1,209 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(174deg, $color_yellow 2%, $color_yellow 46%, #FFFFFF 46%, #FFFFFF 100%, $color_white 100%);
+    background-repeat: no-repeat;
+}
+
+.block{
+    display: block;
+}
+
+
+.container {
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+
+.title {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 48px;
+    color: #333333;
+    letter-spacing: 8.75px;
+    line-height: 82px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.addArea {
+    display: flex;
+    width: 500px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    overflow: hidden;
+
+    input {
+        width: 456px;
+        height: 48px;
+        border: none;
+        outline: none;  
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 16px;
+        letter-spacing: 0.7px;
+        line-height: 24px;
+        font-family: 'Noto Sans TC', sans-serif;
+
+        &::placeholder {
+            color: #9F9A91;
+        }
+    }
+
+    .addBtn {
+        border: none;
+        background-color: #FFFFFF;
+        .fa-plus-square{
+            font-size: 40px;
+        }  
+    }
+}
+
+
+.record-board {
+    background-color: #FFFFFF;
+    width: 500px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
+    
+    .board-top {
+        display: flex;
+        justify-content: center;
+        .button {
+            width: 165px;
+            height: 52px;
+            background-color: #FFFFFF;
+            border: none;
+            border-bottom: 2px solid #EFEFEF ;
+            color: #9F9A91;
+            font-weight: bolder;
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+          }
+
+          .selected{
+              border-bottom: 2px solid #333333;
+              color: #333333 ;
+          }
+    }
+
+    .itemList {
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 8px;
+
+        li {
+            margin-left: 8px;
+            .checkArea {
+                display: inline-block;
+
+                .checkBtn {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #333333;
+                    border-radius: 5px;
+                    background-color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+                .fa-check {
+                    color: #FFD370 ;
+                    display: none;
+                }
+            }
+
+            .decord-item {
+                display: inline-block;
+                width: 392px;
+                font-size: 16px;
+                letter-spacing: 0.62px;
+                line-height: 24px;
+                color: #333333;
+                margin-left: 16px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #EFEFEF;
+            }
+
+            
+
+            .fas.fa-times {
+                font-size: 16px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            &:hover {
+
+
+                .fas.fa-times {
+                    color: #333333;
+                }
+            }
+        }
+
+
+        .checked {
+            .checkArea {
+                .checkBtn {
+                    display: none;
+                }
+                .fa-check {
+                    display: block;
+                }
+                
+            }
+            .complete{
+                text-decoration: line-through;
+                color: #333333;
+                opacity: 0.3;
+            }
+        }
+
+        
+    }
+
+    .board-buttom {
+        padding-right: 23px;
+        height: 68PX;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            line-height: 20px;
+            color: #333333;
+            padding: 24px;
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: bolder;
+            letter-spacing: 0.7px;
+            line-height: 20px;
+            color: #9F9A91;
+            padding: 24px;
+            border: none;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}
+ 
