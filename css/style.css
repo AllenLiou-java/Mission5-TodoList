@@ -83,6 +83,11 @@ body {
   max-width: 510px;
   margin: 0 auto;
 }
+@media (max-width: 376px) {
+  .container {
+    max-width: 375px;
+  }
+}
 
 .content {
   display: -webkit-box;
@@ -95,7 +100,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 48px;
+}
+@media (max-width: 376px) {
+  .content {
+    margin-top: 16px;
+  }
 }
 
 .title {
@@ -106,6 +119,14 @@ body {
   line-height: 82px;
   text-align: center;
   margin-bottom: 26px;
+}
+@media (max-width: 376px) {
+  .title {
+    font-size: 32px;
+    letter-spacing: 5.83px;
+    line-height: 56px;
+    margin-bottom: 2px;
+  }
 }
 
 .addArea {
@@ -119,6 +140,11 @@ body {
   margin-bottom: 8px;
   overflow: hidden;
 }
+@media (max-width: 376px) {
+  .addArea {
+    width: 351px;
+  }
+}
 .addArea input {
   width: 456px;
   height: 48px;
@@ -127,6 +153,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 24px;
+  padding-right: 12px;
   font-size: 16px;
   letter-spacing: 0.7px;
   line-height: 24px;
@@ -147,6 +174,12 @@ body {
 .addArea input::placeholder {
   color: #9F9A91;
 }
+@media (max-width: 376px) {
+  .addArea input {
+    width: 100%;
+    padding-left: 16px;
+  }
+}
 .addArea .addBtn {
   border: none;
   background-color: #FFFFFF;
@@ -163,6 +196,12 @@ body {
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+@media (max-width: 376px) {
+  .record-board {
+    width: 351px;
+    padding-bottom: 0px;
+  }
 }
 .record-board .board-top {
   display: -webkit-box;
@@ -187,6 +226,11 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+@media (max-width: 376px) {
+  .record-board .board-top .button {
+    width: 117px;
+  }
+}
 .record-board .board-top .selected {
   border-bottom: 2px solid #333333;
   color: #333333;
@@ -196,8 +240,19 @@ body {
   padding-left: 16px;
   padding-top: 8px;
 }
+@media (max-width: 376px) {
+  .record-board .itemList {
+    padding-right: 18px;
+    padding-top: 0;
+  }
+}
 .record-board .itemList li {
   margin-left: 8px;
+}
+@media (max-width: 376px) {
+  .record-board .itemList li {
+    margin-left: 0;
+  }
 }
 .record-board .itemList li .checkArea {
   display: inline-block;
@@ -226,10 +281,20 @@ body {
   padding-bottom: 16px;
   border-bottom: 1px solid #EFEFEF;
 }
+@media (max-width: 376px) {
+  .record-board .itemList li .decord-item {
+    width: 80%;
+  }
+}
 .record-board .itemList li .fas.fa-times {
   font-size: 16px;
   color: #FFFFFF;
   cursor: pointer;
+}
+@media (max-width: 376px) {
+  .record-board .itemList li .fas.fa-times {
+    color: #333333;
+  }
 }
 .record-board .itemList li:hover .fas.fa-times {
   color: #333333;
@@ -247,7 +312,7 @@ body {
 }
 .record-board .board-buttom {
   padding-right: 23px;
-  height: 68PX;
+  height: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,12 +320,23 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 376px) {
+  .record-board .board-buttom {
+    padding-right: 0;
+  }
+}
 .record-board .board-buttom p {
   font-size: 14px;
   letter-spacing: 0.7px;
   line-height: 20px;
   color: #333333;
   padding: 24px;
+}
+@media (max-width: 376px) {
+  .record-board .board-buttom p {
+    letter-spacing: 0.82px;
+    padding-left: 16px;
+  }
 }
 .record-board .board-buttom button {
   font-size: 14px;
@@ -272,4 +348,14 @@ body {
   border: none;
   background-color: #FFFFFF;
   cursor: pointer;
+}
+@media (max-width: 376px) {
+  .record-board .board-buttom button {
+    letter-spacing: 0.82px;
+    padding-right: 16px;
+  }
+}
+
+.hide {
+  opacity: 0;
 }
