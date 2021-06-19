@@ -1,8 +1,13 @@
-body {
+
+
+html,body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(174deg, $color_yellow 2%, $color_yellow 46%, #FFFFFF 46%, #FFFFFF 100%, $color_white 100%);
     background-repeat: no-repeat;
+    @include mobile{
+        width: 375px;
+    }
 }
 
 .block{
@@ -15,6 +20,8 @@ body {
     margin: 0 auto; 
     @include mobile{
         max-width: 375px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -61,7 +68,7 @@ body {
         width: 351px;
     }
 
-    input {
+    input.addtxt {
         width: 456px;
         height: 48px;
         border: none;
@@ -80,7 +87,7 @@ body {
         }
 
         @include mobile{
-            width: 100%;
+            width: 304px;
             padding-left: 16px;
         }
     }

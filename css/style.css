@@ -68,11 +68,16 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-body {
+html, body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
   background-repeat: no-repeat;
+}
+@media (max-width: 376px) {
+  html, body {
+    width: 375px;
+  }
 }
 
 .block {
@@ -86,6 +91,8 @@ body {
 @media (max-width: 376px) {
   .container {
     max-width: 375px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -145,7 +152,7 @@ body {
     width: 351px;
   }
 }
-.addArea input {
+.addArea input.addtxt {
   width: 456px;
   height: 48px;
   border: none;
@@ -159,24 +166,24 @@ body {
   line-height: 24px;
   font-family: "Noto Sans TC", sans-serif;
 }
-.addArea input::-webkit-input-placeholder {
+.addArea input.addtxt::-webkit-input-placeholder {
   color: #9F9A91;
 }
-.addArea input::-moz-placeholder {
+.addArea input.addtxt::-moz-placeholder {
   color: #9F9A91;
 }
-.addArea input:-ms-input-placeholder {
+.addArea input.addtxt:-ms-input-placeholder {
   color: #9F9A91;
 }
-.addArea input::-ms-input-placeholder {
+.addArea input.addtxt::-ms-input-placeholder {
   color: #9F9A91;
 }
-.addArea input::placeholder {
+.addArea input.addtxt::placeholder {
   color: #9F9A91;
 }
 @media (max-width: 376px) {
-  .addArea input {
-    width: 100%;
+  .addArea input.addtxt {
+    width: 304px;
     padding-left: 16px;
   }
 }
