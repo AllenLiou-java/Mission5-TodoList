@@ -94,8 +94,15 @@ html,body {
     }
 
     .addBtn {
+        width: 40px;
+        height: 40px;
         border: none;
         background-color: #FFFFFF;
+        padding: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        overflow: hidden;
         .fa-plus-square{
             font-size: 40px;
         }  
