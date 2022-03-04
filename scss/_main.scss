@@ -1,13 +1,17 @@
 
 
 html,body {
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
     background: linear-gradient(174deg, $color_yellow 2%, $color_yellow 46%, #FFFFFF 46%, #FFFFFF 100%, $color_white 100%);
     background-repeat: no-repeat;
-    @include mobile{
-        width: 375px;
+    @include mobile-520{
+        max-width: 520px;
     }
+    @include mobile{
+        max-width: 375px;
+    }
+    
 }
 
 .block{
@@ -18,6 +22,9 @@ html,body {
 .container {
     max-width: 510px;
     margin: 0 auto; 
+    @include mobile-520{
+        max-width: 480px;
+    }
     @include mobile{
         max-width: 375px;
         padding-left: 12px;
@@ -57,13 +64,17 @@ html,body {
 
 .addArea {
     display: flex;
-    width: 500px;
+    max-width: 500px;
     height: 48px;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding-right: 4px;
     margin-bottom: 8px;
     overflow: hidden;
+
+    @include mobile-520{
+        max-width: 480px;
+    }
 
     @include mobile{
         width: 351px;
@@ -86,7 +97,9 @@ html,body {
         &::placeholder {
             color: #9F9A91;
         }
-
+        @include mobile-520{
+            width: 330px;
+        }
         @include mobile{
             width: 304px;
             padding-left: 16px;
@@ -118,6 +131,10 @@ html,body {
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
     overflow: hidden;
 
+    @include mobile-520{
+        width: 376px;
+    }
+
     @include mobile{
         width: 351px;
         padding-bottom: 0px;
@@ -144,12 +161,12 @@ html,body {
             @include mobile{
                 width: 117px;
             }
-          }
+        }
 
-          .selected{
-              border-bottom: 2px solid #333333;
-              color: #333333 ;
-          }
+        .selected{
+            border-bottom: 2px solid #333333;
+            color: #333333 ;
+        }
     }
 
     .itemList {
@@ -198,8 +215,12 @@ html,body {
                 padding-bottom: 16px;
                 border-bottom: 1px solid #EFEFEF;
 
+                @include mobile-520{
+                    width: 280px;
+                }
+
                 @include mobile{
-                    width: 80%;
+                    width: 250px;
                 }
             }
 
@@ -284,7 +305,6 @@ html,body {
         }
     }
 }
- 
 
 .hide{
     opacity: 0;

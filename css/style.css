@@ -69,14 +69,17 @@ body {
 }
 
 html, body {
-  width: 100vw;
-  height: 100vh;
   background: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
   background-repeat: no-repeat;
 }
+@media (max-width: 520px) {
+  html, body {
+    max-width: 520px;
+  }
+}
 @media (max-width: 376px) {
   html, body {
-    width: 375px;
+    max-width: 375px;
   }
 }
 
@@ -87,6 +90,11 @@ html, body {
 .container {
   max-width: 510px;
   margin: 0 auto;
+}
+@media (max-width: 520px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media (max-width: 376px) {
   .container {
@@ -140,13 +148,18 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
+  max-width: 500px;
   height: 48px;
   background-color: #FFFFFF;
   border-radius: 10px;
   padding-right: 4px;
   margin-bottom: 8px;
   overflow: hidden;
+}
+@media (max-width: 520px) {
+  .addArea {
+    max-width: 480px;
+  }
 }
 @media (max-width: 376px) {
   .addArea {
@@ -182,6 +195,11 @@ html, body {
 .addArea input.addtxt::placeholder {
   color: #9F9A91;
 }
+@media (max-width: 520px) {
+  .addArea input.addtxt {
+    width: 330px;
+  }
+}
 @media (max-width: 376px) {
   .addArea input.addtxt {
     width: 304px;
@@ -211,6 +229,11 @@ html, body {
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+@media (max-width: 520px) {
+  .record-board {
+    width: 376px;
+  }
 }
 @media (max-width: 376px) {
   .record-board {
@@ -296,9 +319,14 @@ html, body {
   padding-bottom: 16px;
   border-bottom: 1px solid #EFEFEF;
 }
+@media (max-width: 520px) {
+  .record-board .itemList li .decord-item {
+    width: 280px;
+  }
+}
 @media (max-width: 376px) {
   .record-board .itemList li .decord-item {
-    width: 80%;
+    width: 250px;
   }
 }
 .record-board .itemList li .fas.fa-times {
